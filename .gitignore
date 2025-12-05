@@ -1,70 +1,35 @@
-# Node.js & Dependency Management
-node_modules
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-.pnp.*
+# Dependency directories
+node_modules/
+.pnpm-debug.log
 
-# Build artifacts
-dist
-build
-.next
-.nuxt
-.output
-.svelte-kit
-.vercel
+# Build artifacts and output directories
+dist/
+build/
+.vite/
 
-# TypeScript
-*.tsbuildinfo
-
-# Logs
-logs
+# Logs and temporary files
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Environment variables
-.env
-.env.*
-!.env.example
-!.env.development.local
-!.env.test.local
-!.env.production.local
-
-# IDE & Editor Directories
-.idea
-.vscode/*
-!/.vscode/settings.json
-!/.vscode/tasks.json
-!/.vscode/launch.json
-!/.vscode/extensions.json
-*.sublime-project
-*.sublime-workspace
-
-# Test Reports & Coverage
-coverage
-.nyc_output
-
-# OS generated files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+*.swp
 
-# Misc
-.npm
-.pnpm-store
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# Artifacts from TypeScript or specific build steps
+/coverage
+/temp
+/out
+
+# Specific to testing frameworks (e.g., Playwright artifacts if used)
+playwright-report/
+
+# Environment files (if sensitive data is present)
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# Vercel, Netlify, or hosting specific outputs
+.vercel/
+.netlify/
